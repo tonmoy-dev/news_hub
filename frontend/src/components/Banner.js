@@ -1,25 +1,26 @@
 import React from 'react';
 import bannerImages from '../data/bannerImages';
-import { BannerContainer, MiddleContainer, SideContainer } from '../styles/Banner.styles';
+import { BannerContent, BannerLayout } from '../styles/Banner.styles';
+import { Wrapper } from '../styles/Shared.styles';
 
 const Banner = () => {
     return (
-        <>
-            <BannerContainer>
-                <SideContainer>
+        <Wrapper>
+            <BannerLayout>
+                <BannerContent>
                     <img src={bannerImages.bannerLeft} alt="" />
                     <img src={bannerImages.bannerLeft} alt="" />
-                </SideContainer>
-                <MiddleContainer>
+                </BannerContent>
+                <BannerContent>
                     <img src={bannerImages.bannerMiddle} alt="" />
                     
-                </MiddleContainer>
-                <SideContainer>
+                </BannerContent>
+                <BannerContent>
                     <img src={bannerImages.bannerRight} alt="" />
                     <img src={bannerImages.bannerRight} alt="" />
-                </SideContainer>
-            </BannerContainer>
-        </>
+                </BannerContent>
+            </BannerLayout>
+        </Wrapper>
     )
 };
 

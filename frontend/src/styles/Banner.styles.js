@@ -1,15 +1,13 @@
 import styled from 'styled-components';
 
 
-export const BannerContainer = styled.div`
-  padding: 50px 0;
+export const BannerLayout = styled.div`
   display: grid;
   grid-template-columns: 25% 1fr 25%;
-  /* background: papayawhip; */
   gap: 10px;
 `;
 
-export const SideContainer = styled.div`
+export const BannerContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -19,7 +17,7 @@ export const SideContainer = styled.div`
     }
 `;
 
-export const MiddleContainer = styled.div`
+/* export const MiddleContent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -28,3 +26,4 @@ export const MiddleContainer = styled.div`
         border-radius: 8px;
     }
 `;
+ */
