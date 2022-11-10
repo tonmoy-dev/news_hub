@@ -1,7 +1,7 @@
 import React from 'react';
 import exploreImages from '../../data/exploreImages';
-import { BannerBody, BannerButton, BannerImage, BannerTitle, Container, ExploreContents, SideBanner } from '../../styles/Explore.styles';
 import { Wrapper } from '../../styles/Shared.styles';
+import { BannerBody, BannerButton, BannerImage, BannerTitle, Container, ExploreContents, SideBanner } from './Explore.styles';
 import ExploreCard from './ExploreCard';
 
 const Explore = () => {

@@ -9,8 +9,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        width: 1140px;
-        margin: 0 auto;
+        padding: 4rem;
     }
 
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import exploreImages from '../../data/exploreImages';
-import { CardWrapper } from '../../styles/Explore.styles';
+import { CardWrapper } from './Explore.styles';
 
 const ExploreCard = () => {
     return (

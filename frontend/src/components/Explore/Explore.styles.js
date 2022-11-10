@@ -1,29 +1,38 @@
 import styled from "styled-components";
+import { devices } from '../../styles/Breakpoints.styles';
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 40px;
+    gap: 30px;
+    grid-template-areas: 
+    'main' 
+    '.'
+    '.';
+    
+    @media ${devices.device_md} {
+    grid-template-areas: 
+    'main main' 
+    '. .';
+      }
+      
+    @media ${devices.device_lg} {
+    grid-template-areas: 
+    'main . .';
 `;
 
 export const SideBanner = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    
+    justify-content: space-between;
+    grid-area: main;
     & div{
         text-align: left;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 20px;
-        
-    }
+        gap: 30px;
+    }    
 `;
-
-/* export const BannerContent = styled.div`
-    
-`; */
 
 export const BannerTitle = styled.h2`
     font-weight: bold;
@@ -32,7 +41,6 @@ export const BannerTitle = styled.h2`
 `;
 
 export const BannerBody = styled.p`
-
 `;
 
 export const BannerButton = styled.button`
@@ -50,7 +58,6 @@ export const BannerImage = styled.div`
         width: 100%;
         height: 100%;
     }
-    
 `;
 
 export const ExploreContents = styled.div`
